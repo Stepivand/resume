@@ -7,92 +7,122 @@
     <meta name="keywords" content="вакансия, работа, Степан" />
     <meta name="description" content="Резюме для работы программистом" />
     <title>Stepan Resume</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <img
-      src="tom-holland.jpg"
-      alt="Здесь должна быть моя фотография"
-      width="250"
-    />
+    <div class="container">
+      <div class="info">
+        <img class="avatar" src="avatar.jpg" alt="Здесь должна быть моя фотография" />
+        <div class="info-text">
+          <h1>Иванов Степан</h1>
 
-    <h1>Иванов Степан</h1>
+          <p>
+            Я учусь в университете по направлению
+            <strong>информатика и вычислительная техника</strong>, работаю
+            <strong>инженером-электроником</strong> на предприятии
+          </p>
+          <p>
+            Я люблю <em>общаться</em>, <em>заниматься спортом</em> и
+            <em>программировать</em>
+          </p>
 
-    <p>
-      Я учусь в университете по направлению
-      <strong>информатика и вычислительная техника</strong>, работаю
-      <strong>инженером-электроником</strong> на предприятии
-    </p>
-    <p>
-      Я люблю <em>общаться</em>, <em>заниматься спортом</em> и
-      <em>программировать</em>
-    </p>
+          <h4>Мои социальные сети:</h4>
 
-    <h4>Мои социальные сети:</h4>
+          <a href="https://www.yandex.ru//" target="_blank"> Telegram</a>
+          |
+          <a href="https://www.google.ru//" target="_blank"> ВК</a>
+        </div>
+      </div>
 
-    <a href="https://www.google.ru/" target="_blank"> Telegram</a>
-    |
-    <a href="https://www.google.ru/" target="_blank"> ВК</a>
 
-    <h2>Мои хобби:</h2>
+      <div class="card bg-green" >
+        <h2>Мои хобби</h2>
 
-    <ol>
-      <li>Игра в шахматы</li>
-      <li>Катание на сноуборде</li>
-      <li>Плавание</li>
-      <li>Просмотр сериалов</li>
-    </ol>
+        <ol class="list">
+          <li>С детства моя любимая игра это шахматы (звание КМС)</li>
+          <li>Любимое время года зима, обажаю кататься на сноуборде</li>
+          <li>Тренажерный зал и турники не моя тема, а вот сходить в бассеин я всегда не против </li>
+        </ol>
+      </div>  
 
-    <h2>Опыт работы</h2>
+      <div class="card bg-red">
+        <h2>Опыт работы и образование</h2>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ЮУрГУ</td>
-          <td>Бакалавр</td>
-          <td>2013-2017</td>
-        </tr>
-        <tr>
-          <td>LD</td>
-          <td>Разнорабочий</td>
-          <td>2018-2019</td>
-        </tr>
-        <tr>
-          <td>Комбинат Магнезит</td>
-          <td>Инженер-электроник</td>
-          <td>2019-2022</td>
-        </tr>
-      </tbody>
-    </table>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>ЮУрГУ</td>
+              <td>Факультет механико-технологическиц, напрвление автоматизация механосборочного производства, 4 курса, незаконченное</td>
+              <td>2013-2018</td>
+            </tr>
+            <tr>
+              <td>LD Pride</td>
+              <td>Разнорабочий</td>
+              <td>2016-2017</td>
+            </tr>
+            <tr>
+              <td>Метран</td>
+              <td>Электронщик-стажер</td>
+              <td>2017-2018</td>
+            </tr>
+            <tr>
+              <td>Комбинат Магнезит</td>
+              <td>Инженер-электроник</td>
+              <td>2018-н.в</td>
+            </tr>
+            <tr>
+              <td>ЮУрГУ</td>
+              <td>Институт открытого и дистанционного образования, напрвление информатика и вычислительная техника, заканчиваю 4 курс</td>
+              <td>2020-н.в</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="card bg-yellow">
+        <h2>Основные навыки</h2>
+        <p>Личные качества - коммуникабельность, работа в команде, трудолюбие и упорство. Профессиональные навыки - программирование на языке С++ логических контроллеров и человеко-машинных интерфейсов на предприятии. Есть желание и мотивация сменить напрвление своей деятельности (уйти от промышленности) и стать Frontend-разработчиком. Имею базовые знания HTML и CSS. </p>
+      </div>
 
-    <h2>Связаться со мной</h2>
 
-    <div>
-      <label for="text">Ваше имя</label>
-      <input type="text" id="text" placeholder="Введите имя " />
-    </div>
+      <form action="\" class="form">
+        <h2>Связаться со мной</h2>
+        
+        <div class="form-row">
 
-    <div>
-      <label for="email">Ваш email</label>
-      <input type="email" id="email" placeholder="Введите email " />
-    </div>
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите имя:" />
+          </div>
 
-    <div>
-      <label for="message">Ваше сообщение:</label>
-      <br />
-      <textarea
-        id="message"
-        cols="25"
-        rows="5"
-        placeholder="Введите сообщение..."
-      ></textarea>
-    </div>
-    <input type="submit" value="Отправить!" />
+          <div class="form-group">
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" placeholder="Введите email:" />
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            id="message"
+            cols="25"
+            rows="5"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+        <input class="btn" type="submit" value="Отправить!">
+
+      </form>  
+
+
+    </div>  
   </body>
 </html>
